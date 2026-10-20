@@ -1,0 +1,175 @@
+
+.office-page {
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+.online,
+.room-status {
+  color: #86efac;
+  font-size: 14px;
+}
+
+.office-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 32px 6%;
+}
+
+.office-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.office-header p,
+.office-controls p {
+  color: #a8b1c7;
+  line-height: 1.7;
+}
+
+.office {
+  position: relative;
+  width: 88%;
+  max-width: 1100px;
+  height: 480px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid #394565;
+  border-radius: 18px;
+  outline: none;
+  background-color: #17243a;
+  background-image:
+    linear-gradient(#283650 1px, transparent 1px),
+    linear-gradient(90deg, #283650 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.office:focus {
+  border-color: #929cff;
+}
+
+.desk {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 140px;
+  height: 95px;
+  border: 1px solid #66769a;
+  border-radius: 12px;
+  background: #34435f;
+  font-size: 25px;
+}
+
+.desk span {
+  color: #e2e8f0;
+  font-size: 12px;
+}
+
+.desk-one {
+  left: 12%;
+  top: 15%;
+}
+
+.desk-two {
+  right: 12%;
+  bottom: 15%;
+}
+
+.plant {
+  position: absolute;
+  font-size: 32px;
+}
+
+.plant-one {
+  left: 8%;
+  bottom: 12%;
+}
+
+.plant-two {
+  right: 8%;
+  top: 12%;
+}
+
+.player {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  transform: translate(-50%, -50%);
+  transition: left 0.12s, top 0.12s;
+  z-index: 2;
+}
+
+.player-avatar {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border: 2px solid #a5b4fc;
+  border-radius: 50%;
+  background: #34435f;
+  font-size: 28px;
+}
+
+.player > span {
+  background: #7889ff;
+  color: #10152a;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.office-label {
+  position: absolute;
+  right: 20px;
+  bottom: 16px;
+  color: #8491ac;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.office-controls {
+  text-align: center;
+  padding: 25px 16px;
+}
+
+.key-guide {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.key-guide span {
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #495778;
+  border-radius: 7px;
+  background: #202944;
+}
+
+@media (max-width: 600px) {
+  .office {
+    width: 94%;
+    height: 400px;
+  }
+
+  .desk {
+    width: 95px;
+    height: 75px;
+  }
+
+  .office-header {
+    padding: 25px 5%;
+  }
+}

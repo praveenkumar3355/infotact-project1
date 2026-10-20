@@ -1,0 +1,130 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b1020;
+  color: #f5f7ff;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8%;
+  border-bottom: 1px solid #252b40;
+}
+
+.logo {
+  font-size: 27px;
+}
+
+.logo span,
+.hero h1 span {
+  color: #929cff;
+}
+
+.sign-in,
+.join-button {
+  border: none;
+  border-radius: 9px;
+  padding: 14px 22px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sign-in {
+  background: #202944;
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 20px 65px;
+}
+
+.tag {
+  color: #a5b4fc;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 1.12;
+  margin-bottom: 25px;
+}
+
+.description {
+  max-width: 540px;
+  margin: 0 auto 30px;
+  color: #a8b1c7;
+  line-height: 1.8;
+}
+
+.join-button {
+  background: #8490ff;
+  color: #0b1020;
+  font-size: 16px;
+}
+
+.join-button:hover {
+  background: #a4adff;
+}
+
+.team {
+  margin: 60px auto 0;
+  max-width: 480px;
+  padding: 28px 20px;
+  border: 1px solid #29314a;
+  border-radius: 18px;
+  background: #11182c;
+}
+
+.avatars {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.avatars div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #242d48;
+  font-size: 28px;
+}
+
+.team p {
+  margin-top: 18px;
+  color: #a8b1c7;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #78839d;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .hero {
+    padding-top: 65px;
+  }
+}
